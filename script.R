@@ -6,7 +6,7 @@
 
 # 1. Datenaufbereitung ----
 # Trainingsdaten laden
-data <- read.csv2("C:/Users/U80851553/Documents/DAS Angewandte Statistik/Diplomarbeit/data_train.csv", 
+data <- read.csv2("https://raw.githubusercontent.com/maebischer/suv-classification-das-ethz/refs/heads/main/data_train.csv", 
                   fileEncoding = "UTF-8-BOM", stringsAsFactors = TRUE, na.strings = c("NA","N/A",""))
 
 # Überblick über Daten gewinnen
@@ -493,7 +493,7 @@ summary(imp$Antrieb_Code[imp$SUV==1])
 
 
 # Testdaten laden
-testdaten <- read.csv2("C:/Users/U80851553/Documents/DAS Angewandte Statistik/Diplomarbeit/data_test.csv", encoding = "UTF-8", stringsAsFactors = T)
+testdaten <- read.csv2("https://raw.githubusercontent.com/maebischer/suv-classification-das-ethz/refs/heads/main/data_test.csv", encoding = "UTF-8", stringsAsFactors = T)
 
 # 7.1 Daten aufbereiten ----
 # SUV umbenennen
